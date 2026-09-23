@@ -23,6 +23,10 @@ public class Media {
     public boolean isAvailable() {
         return isAvailable;
     }
+    
+    public int getId() { 
+        return id;
+    }
 
 
     public void print() {
