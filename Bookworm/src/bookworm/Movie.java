@@ -25,15 +25,15 @@ public class Movie extends Media {
         return rating;
     }
     
-    public String setDirector(String director) {
+    public void setDirector(String director) {
         this.director = director
     }
     
-    public String setRuntime(String runtime) {
+    public void setRuntime(String runtime) {
         this.runtime = runtime;
     }
     
-    public String setRating(String rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
     
