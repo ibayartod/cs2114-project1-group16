@@ -182,12 +182,39 @@ public class Library {
         return true;
     }
     
-    public Media search(String str) {
-        return new Media();
+    // ----------------------------------------------------------
+    /**
+     * Searches for media by its title
+     * @param str what the user searches for
+     * @return a list of Media that has the substring str in it
+     */
+    public ArrayList<Media> search(String str) {
+        ArrayList<Media> results = new ArrayList<Media>();
+        
+        for(int i = 0; i < media.size(); i++) {
+            String title = media.get(i).getName();
+            if (title.contains(str)) {
+                results.add(media.get(i));
+            }
+        }
+        return results;
     }
     
+    // ----------------------------------------------------------
+    /**
+     * Searches for media by its Id number.
+     * @param id the media Id number
+     * @return the piece of media with that Id number
+     */
     public Media search(int id) {
-        return new Media();
+        Media results;
+        for(int i = 0; i < media.size(); i++) {
+            int mediaId = media.get(i).getId();
+            if (mediaId == id) {
+                results = media.get(i);
+            }
+        }
+        return results;
     }
     
 
