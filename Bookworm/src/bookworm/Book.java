@@ -10,10 +10,6 @@ public class Book extends Media {
     private String ISBN;
     
     public Book() {
-        
-    }
-    
-    public void print() {
         author = "";
         genre = "";
         ISBN =  "";
@@ -39,7 +35,7 @@ public class Book extends Media {
         this.genre = genre;
     }
     
-    public void setISBN() {
+    public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
     
