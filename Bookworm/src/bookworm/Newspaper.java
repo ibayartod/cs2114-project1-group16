@@ -27,15 +27,15 @@ public class Newspaper extends Media {
         return edition;
     }
     
-    public String setPublisher() {
+    public void setPublisher() {
         this.publisher = publisher;
     }
     
-    public String setPublicationDate() {
+    public void setPublicationDate() {
         this.publicationdate = publication;
     }
     
-    public String setEdition() {
+    public void setEdition() {
         this.edition = edition;
     }
     
