@@ -2,30 +2,48 @@ package bookworm;
 
 import student.TestCase;
 
+/**
+ * Tests the Book class.
+ */
 public class BookTest extends TestCase {
 
     private Book book;
 
+    /**
+     * Sets up the test.
+     */
     public void setUp() {
         book = new Book();
     }
 
+    /**
+     * Tests the constructor.
+     */
     public void testConstructor() {
         assertEquals("", book.getAuthor());
         assertEquals("", book.getGenre());
         assertEquals("", book.getISBN());
     }
 
+    /**
+     * Tests setAuthor.
+     */
     public void testSetAuthor() {
-        book.setAuthor("J.K. Rowling");
-        assertEquals("J.K. Rowling", book.getAuthor());
+        book.setAuthor("George Orwell");
+        assertEquals("George Orwell", book.getAuthor());
     }
 
+    /**
+     * Tests setGenre.
+     */
     public void testSetGenre() {
-        book.setGenre("Fantasy");
-        assertEquals("Fantasy", book.getGenre());
+        book.setGenre("Fiction");
+        assertEquals("Fiction", book.getGenre());
     }
 
+    /**
+     * Tests setISBN.
+     */
     public void testSetISBN() {
         book.setISBN("123456789");
         assertEquals("123456789", book.getISBN());
