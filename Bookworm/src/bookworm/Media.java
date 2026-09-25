@@ -26,7 +26,7 @@ public class Media {
     public Media(String mTitle, int mId) {
         title = mTitle;
         id = mId;
-        isAvailable = false;
+        isAvailable = true;
     }
 
 
