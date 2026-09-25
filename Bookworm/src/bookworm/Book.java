@@ -75,6 +75,7 @@ public class Book extends Media {
      */
     @Override
     public void print() {
+        super.print();
         System.out.println("Author: " + author);
         System.out.println("Genre: " + genre);
         System.out.println("ISBN: " + ISBN);
