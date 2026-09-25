@@ -64,7 +64,7 @@ public class LibraryTest extends student.TestCase {
     public void testAddMedia() {
         assertFalse(library.addMedia(null));
         library.addMedia(new Media("name", 67));
-        assertEquals(library.getNumMedia(), 5);
+        assertEquals(library.getNumMedia(), 25);
     }
     
     // ----------------------------------------------------------
@@ -72,9 +72,9 @@ public class LibraryTest extends student.TestCase {
      * Tests remove media 
      */
     public void testRemoveMedia() {
-        Media media1 = library.search(67);
+        Media media1 = library.search(0);
         library.removeMedia(media1);
-        assertEquals(library.getNumMedia(), 4);
+        assertEquals(library.getNumMedia(), 23);
     }
     
     // ----------------------------------------------------------
@@ -82,7 +82,7 @@ public class LibraryTest extends student.TestCase {
      * Tests getNumMedia
      */
     public void testGetNumMedia() {
-        assertEquals(library.getNumMedia(), 4);
+        assertEquals(library.getNumMedia(), 24);
     }
     
     // ----------------------------------------------------------
