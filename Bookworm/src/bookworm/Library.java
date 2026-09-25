@@ -201,7 +201,11 @@ public class Library {
         }
 
         if (m instanceof Movie) {
-            user.changeBalance(-4.0);
+            if (user.getBalance() > 4.0) {
+                user.changeBalance(-4.0);
+            } else {
+                return false;
+            }
         }
         
         user.checkOut(m);
