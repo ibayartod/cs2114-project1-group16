@@ -192,6 +192,10 @@ public class Library {
             return false;
         }
         
+        if (!media.contains(m)) {
+            return false;
+        }
+        
         if (!m.isAvailable()) {
             return false;
         }
@@ -213,6 +217,10 @@ public class Library {
     public boolean returnMedia(User user, Media m) {
         
         if (user == null || m == null) {
+            return false;
+        }
+
+        if (!media.contains(m)) {
             return false;
         }
         
