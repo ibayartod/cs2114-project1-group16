@@ -15,6 +15,7 @@ public class Movie extends Media {
      * Creates a movie.
      */
     public Movie() {
+        super("", 0, true);
         director = "";
         runtime = "";
         rating = "";
