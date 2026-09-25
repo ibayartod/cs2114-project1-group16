@@ -104,6 +104,8 @@ public class LibraryTest extends student.TestCase {
         
         User user = library.getUser("George");
         Media media = library.search(0);
+        Media other = new Movie("Spider-Man 5", "Guillermo del Toro", 91);
+        assertFalse(library.checkOutMedia(user, other));
         assertTrue(library.checkOutMedia(user, media));
         assertFalse(library.checkOutMedia(user, media));
     }
@@ -117,7 +119,9 @@ public class LibraryTest extends student.TestCase {
         User user1 = library.getUser("George");
         User user2 = library.getUser("Jeff");
         Media media = library.search(0);
+        Media other = new Movie("Spider-Man 5", "Guillermo del Toro", 91);
         
+        assertFalse(library.returnMedia(user, other));
         assertFalse(library.returnMedia(user1, media));
         library.checkOutMedia(user1, media);
         assertFalse(library.returnMedia(user2, media));
