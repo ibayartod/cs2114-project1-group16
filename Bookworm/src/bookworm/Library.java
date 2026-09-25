@@ -199,6 +199,10 @@ public class Library {
         if (!m.isAvailable()) {
             return false;
         }
+
+        if (m instanceof Movie) {
+            user.changeBalance(-4.0);
+        }
         
         user.checkOut(m);
         
