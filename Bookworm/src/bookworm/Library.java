@@ -22,6 +22,29 @@ public class Library {
     public Library() {
         this.users = new ArrayList<User>();
         this.media = new ArrayList<Media>();
+
+        this.addMedia(new Book("To Kill a Mockingbird", "Harper Lee", 0));
+        this.addMedia(new Book("1984", "George Orwell", 1));
+        this.addMedia(new Book("The Great Gatsby", "F. Scott Fitzgerald", 2));
+        this.addMedia(new Book("Pride and Prejudice", "Jane Austen", 3));
+        this.addMedia(new Book("The Hobbit", "J.R.R. Tolkien", 4));
+        this.addMedia(new Book("Fahrenheit 451", "Ray Bradbury", 5));
+        this.addMedia(new Book("Moby-Dick", "Herman Melville", 6));
+        this.addMedia(new Book("The Catcher in the Rye", "J.D. Salinger", 7));
+        this.addMedia(new Book("Brave New World", "Aldous Huxley", 8));
+        this.addMedia(new Book("Jane Eyre", "Charlotte Brontë", 9));
+        this.addMedia(new Book("Crime and Punishment", "Fyodor Dostoevsky", 10));
+        this.addMedia(new Book("The Lord of the Rings", "J.R.R. Tolkien", 11));
+
+        this.addMedia(new Movie("Inception", "Christopher Nolan", 12));
+        this.addMedia(new Movie("The Matrix", "Lana & Lilly Wachowski", 13));
+        this.addMedia(new Movie("Interstellar", "Christopher Nolan", 14));
+        this.addMedia(new Movie("Jurassic Park", "Steven Spielberg", 15));
+
+        this.addMedia(new Newspaper("The Wall Street Journal", 16));
+        this.addMedia(new Newspaper("The Washington Post", 17));
+        this.addMedia(new Newspaper("The New York Times", 18));
+        this.addMedia(new Newspaper("The Guardian", 19));
     }
     
     private int getUserIndex(User user) {
